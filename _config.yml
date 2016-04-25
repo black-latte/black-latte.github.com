@@ -1,136 +1,130 @@
-# This is the default format.
-# For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title
+# Welcome to Jekyll!
+# Documentation: https://jekyllrb.com/docs/configuration/
+#      defaults: https://jekyllrb.com/docs/configuration/#default-configuration
+#
+# This file is *NOT* reloaded automatically when you use 'bundle exec jekyll serve'.
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Your awesome title
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-# https://help.github.com/articles/migrating-your-pages-site-from-maruku
+## SITE NAVIGATION
+# By default, all pages in your site are added to navigation.
+# If you want to link only specific pages or posts in your header, uncomment
+# this and add the path to the pages in order as they should show up
+# Note: Any values are overridden by _data/header_pages.yml
+#header_pages:
+# - about.md
+
+
+# Build settings
+# ██████  ██    ██ ██ ██      ██████      ███████ ███████ ████████ ████████ ██ ███    ██  ██████  ███████
+# ██   ██ ██    ██ ██ ██      ██   ██     ██      ██         ██       ██    ██ ████   ██ ██       ██
+# ██████  ██    ██ ██ ██      ██   ██     ███████ █████      ██       ██    ██ ██ ██  ██ ██   ███ ███████
+# ██   ██ ██    ██ ██ ██      ██   ██          ██ ██         ██       ██    ██ ██  ██ ██ ██    ██      ██
+# ██████   ██████  ██ ███████ ██████      ███████ ███████    ██       ██    ██ ██   ████  ██████  ███████
+
+# Github-pages list of gems https://pages.github.com/versions/
+plugins:
+  - jekyll-feed             # SEO generate an Atom (RSS-like) feed of your Jekyll posts — https://github.com/jekyll/jekyll-feed
+  - jekyll-redirect-from    # SEO 301 redirects — https://github.com/jekyll/jekyll-redirect-from
+  - jekyll-seo-tag          # SEO add metadata tags for search & social networks — https://github.com/jekyll/jekyll-seo-tag
+#  - jekyll-sitemap          # SEO Generate a sitemaps.org compliant sitemap — https://github.com/jekyll/jekyll-sitemap
+#  - jekyll-paginate         # Jekyll Built-in Pagination Generator for Jekyll
+#  - jekyll-readme-index     # Jekyll Render a project's README as the site's index — https://github.com/benbalter/jekyll-readme-index/
+#  - jekyll-avatar           # Liquid  rendering GitHub avatars — https://github.com/benbalter/jekyll-avatar/
+#  - jekyll-gist             # Liquid Liquid tag for displaying GitHub Gists — https://github.com/jekyll/jekyll-gist/
+#  - jekyll-mentions         # GFM @mention support for your Jekyll site — https://github.com/jekyll/jekyll-mentions
+#  - jekyll-relative-links   # GFM convert relative links to markdown files to their rendered equivalents — https://github.com/benbalter/jekyll-relative-links/
+  - jemoji                  # GFM GitHub-flavored Emoji plugin for Jekyll — https://github.com/jekyll/jemoji
+#  - jekyll-titles-from-headings # Generate page title from the first Markdown heading when none is specified — https://github.com/benbalter/jekyll-titles-from-headings
+#
+# Won't work on github pages, and will need to be added to Gemfile
+#  - jekyll-admin            # Provides a traditional CMS-style graphical interface to author and administer Jekyll — Docs: https://github.com/jekyll/jekyll-admin
+#  - jekyll-bootstrap-sass   # Docs: http://www.rubydoc.info/gems/jekyll-bootstrap-sass/0.1.0
+#  - bootstrap-sass          # Docs: http://www.rubydoc.info/gems/bootstrap-sass
+#
+# Jekyll-pages requires the following Gems by default.
+# Therefore, read the docs if you want to change default configurations.
+#      - jekyll-coffeescript              # https://github.com/jekyll/jekyll-coffeescript
+#      - jekyll-default-layout            # https://github.com/benbalter/jekyll-default-layout
+#      - jekyll-gist                      # https://github.com/jekyll/jekyll-gist
+#      - jekyll-github-metadata           # https://github.com/jekyll/github-metadata
+#      - jekyll-optional-front-matter     # https://github.com/benbalter/jekyll-optional-front-matter
+#      - jekyll-paginate                  # https://github.com/jekyll/jekyll-paginate
+#      - jekyll-readme-index              # https://github.com/benbalter/jekyll-readme-index
+#      - jekyll-relative-links            # https://github.com/benbalter/jekyll-relative-links
+#      - jekyll-titles-from-headings      # https://github.com/benbalter/jekyll-titles-from-headings
+
+liquid:
+  error_mode: strict #warn  #lax
 markdown: kramdown
 
-# Themes are encouraged to use these universal variables
-# so be sure to set them if your theme uses them.
-#
-title : Jekyll Bootstrap-3
-tagline: Site Tagline
-author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
 
-# The production_url is only used when full-domain names are needed
-# such as sitemap.txt
-# Most places will/should use BASE_PATH to make the urls
-#
-# If you have set a CNAME (pages.github.com) set your custom domain here.
-# Else if you are pushing to username.github.io, replace with your username.
-# Finally if you are pushing to a GitHub project page, include the project name at the end.
-#
-production_url : http://username.github.io
+# Github Metadata (github-pages)
+# Docs https://github.com/jekyll/github-metadata
+repository: blacklattekawa/blacklattekawa                                   # username/repo-name
 
-# All Jekyll-Bootstrap specific configurations are namespaced into this hash
-#
-JB :
-  version : 0.3.0
+# Jekyll Sass Converter: https://github.com/jekyll/jekyll-sass-converter/
+# Docs: https://jekyllrb.com/docs/assets/#sassscss
+sass:
+    sass_dir: assets/_sass
+    style: compressed #nested expanded compact compressed
 
-  # All links will be namespaced by BASE_PATH if defined.
-  # Links in your website should always be prefixed with {{BASE_PATH}}
-  # however this value will be dynamically changed depending on your deployment situation.
-  #
-  # CNAME (http://yourcustomdomain.com)
-  #   DO NOT SET BASE_PATH
-  #   (urls will be prefixed with "/" and work relatively)
-  #
-  # GitHub Pages (http://username.github.io)
-  #   DO NOT SET BASE_PATH
-  #   (urls will be prefixed with "/" and work relatively)
-  #
-  # GitHub Project Pages (http://username.github.io/project-name)
-  #
-  #   A GitHub Project site exists in the `gh-pages` branch of one of your repositories.
-  #  REQUIRED! Set BASE_PATH to: http://username.github.io/project-name
-  #
-  # CAUTION:
-  #   - When in Localhost, your site will run from root "/" regardless of BASE_PATH
-  #   - Only the following values are falsy: ["", null, false]
-  #   - When setting BASE_PATH it must be a valid url.
-  #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH : false
+# JEKYLL-REDIRECT-FROM
+# If you're using Jekyll in safe mode to mimic GitHub Pages, make sure to add
+# jekyll-redirect-from to your whitelist:
+#whitelist:
+#  - jekyll-redirect-from
 
-  # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
-  # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
-  #
-  # Override this by defining an absolute path to assets here.
-  # ex:
-  #   http://s3.amazonaws.com/yoursite/themes/watermelon
-  #   /assets
-  #
-  ASSET_PATH : false
 
-  # These paths are to the main pages Jekyll-Bootstrap ships with.
-  # Some JB helpers refer to these paths; change them here if needed.
-  #
-  archive_path: /archive.html
-  categories_path : /categories.html
-  tags_path : /tags.html
-  atom_path : /atom.xml
-  rss_path : /rss.xml
+# JEKYLL-SEO-TAG
+# ███████ ███████  ██████
+# ██      ██      ██    ██
+# ███████ █████   ██    ██
+#      ██ ██      ██    ██
+# ███████ ███████  ██████
+# Usage: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# Advanced usage: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md
 
-  # Settings for comments helper
-  # Set 'provider' to the comment provider you want to use.
-  # Set 'provider' to false to turn commenting off globally.
-  #
-  comments :
-    provider : disqus
-    disqus :
-      short_name : jekyllbootstrap
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
+logo: /assets/images/logo.png
+name: config_yml__name  # default author for posts. (defaults to site.title if null)
 
-  # Settings for analytics helper
-  # Set 'provider' to the analytics provider you want to use.
-  # Set 'provider' to false to turn analytics off globally.
-  #
-  analytics :
-    provider : google
-    google :
-        tracking_id : 'UA-***'
-    googleUA :
-        tracking_id : 'UA-***'
-        property_name : 'PROPERTY NAME'
-    getclicky :
-      site_id : 
-    mixpanel :
-        token : '_MIXPANEL_TOKEN_'
-    piwik :
-        baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
-        idsite : '1'                   # the id of the site on Piwik
+# default author for posts. (defaults to site.title if null)
+#author:
+#  twitter: config_yml__author_twitter
 
-  # Settings for sharing helper.
-  # Sharing is for things like tweet, plusone, like, reddit buttons etc.
-  # Set 'provider' to the sharing provider you want to use.
-  # Set 'provider' to false to turn sharing off globally.
-  #
-  sharing :
-    provider : false
+#twitter:
+#  username: config_yml__twitter_username
 
-  # Settings for all other include helpers can be defined by creating
-  # a hash with key named for the given helper. ex:
-  #
-  #   pages_list :
-  #     provider : "custom"
-  #
-  # Setting any helper's provider to 'custom' will bypass the helper code
-  # and include your custom code. Your custom file must be defined at:
-  #   ./_includes/custom/[HELPER]
-  # where [HELPER] is the name of the helper you are overriding.
-  
+facebook:
+  app_id: config_yml__facebook_app_id
+  publisher: config_yml__facebook_publisher
+  admins: config_yml__facebook_admins
+
+social:
+  links: [ "https://twitter.com/config_yml__social", "https://www.facebook.com/config_yml__social", "https://www.linkedin.com/in/config_yml__social", "https://plus.google.com/+config_yml__social", "https://keybase.io/config_yml__social", "https://github.com/config_yml__social"]
+  name: config_yml__social_name
+
+webmaster_verifications:
+  google: config_yml__webmaster_google
+  bing: config_yml__webmaster_bing
+  alexa: config_yml__webmaster_alexa
+  yandex: config_yml__webmaster_yandex
+
+lang: en_US

@@ -1,37 +1,21 @@
-# Jekyll-Bootstrap-3
+---
+layout: default
+#redirect_from: /some-url/
+---
 
-Easily publish Bootstrap 3 powered Jekyll sites.  
-Fork of the well known jekyll-bootstrap (v0.3.0). Original project is [here](https://github.com/plusjade/jekyll-bootstrap).  
-The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages.  
+# Read Me
 
-## Usage
+This is a Jekyll template for :octocat: Github pages based on the Bootstrap Framework ([Official Sass version](https://github.com/twbs/bootstrap-sass)).  It also utilizes practices from the Jekyll default theme `minima`.
 
-### 1. Create a Repo
-- Go to <https://github.com> and create a new repository named *USERNAME.github.io*  
+## Details
 
-### 2. Install Jekyll-Bootstrap-3  
-<pre>
-  <code>
-    $ git clone https://github.com/dbtek/jekyll-bootstrap-3 USERNAME.github.io
-    $ cd USERNAME.github.com
-    $ git remote set-url origin git@github.com:USERNAME/USERNAME.github.io.git
-    $ git push origin master  
-  </code>
-</pre>  
-### 3. Enjoy !
-- After giving 10 mins to GitHub of course.  
+See [Demo with Instructions](https://mdrmike.github.io/jekyll-theme-gh-bootstrap/).
 
-For original project's usage and documentation please see: <http://jekyllbootstrap.com>  
+## Bugs and Issues
+
+Find a bug or have a suggestion? [Open a new issue]({{ site.github.issues_url }}) on GitHub.
 
 
-### Themes
+## Copyright and License
 
-Quickly install and use lovely themes with Jekyll Bootstrap 3. Visit [theme gallery](http://jekyllbootstrap3.tk/preview/).
-
-## License
-
-[MIT](http://opensource.org/licenses/MIT)
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dbtek/jekyll-bootstrap-3/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+Copyright 2017 Michael Stewart.  Theme code released under the [MIT License]({{ site.github.repository_url }}/LICENSE).  Bootstrap [MIT License](https://github.com/twbs/bootstrap-sass/blob/master/LICENSE).

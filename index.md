@@ -1,45 +1,51 @@
 ---
-layout: page
-title: Hello World!
-tagline: Supporting tagline
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: home
+#redirect_from: 
+# - /some-url/
+# - /index.php
+# - /default/
 ---
-{% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+# Bootstrap Sass Jekyll Template for Github pages
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+Jekyll Bootstrap template for :octocat: Github pages ([Official Sass version](https://github.com/twbs/bootstrap-sass)). No plugins needed!  It also utilizes many best practices from `minima` theme, checkout the [demo](https://mdrmike.github.io/jekyll-theme-gh-bootstrap/).
 
-## Update Author Attributes
+**Note:** :book: There are a few known configuration :bug: issues due to Jekyll sass-converter and bootstrap sass requirements.  The results work fine :rocket:, at least for most Bootstrap features, but it's worth :school: understanding [Configuration & Usage](https://github.com/twbs/bootstrap-sass/blob/v3.3.7/README.md) in the TWBS README.
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+## Setup
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/dbtek/jekyll-bootstrap-3)!
+1.  Download or clone a copy of [this repository]({{ site.github.repository_url }}) into a local folder
+1.  Open your local copy of the project folder
+1.  Setup Bundler & Jekyll
+1.  Use bundler to configure your system for the project
+1.  Open your favorite text editor
+1.  Run the Jekyll server
+1.  Browse to [http://localhost:4000](http://localhost:4000)
 
 
+#### Example 
+
+```sh
+git clone {{ site.github.clone_url }}
+cd {{ site.github.project_title }}
+gem install jekyll bundler
+bundle install
+atom .
+bundle exec jekyll serve
+```
+
+## How to Customize
+
+-   `Gemfile` is used by `bundler` package manger to setup local environment.
+-   `_config.yml` is used by to setup jekyll and plugins (or override default) `site.` variables, and define defaults.  The syntax is standard YAML.
+-   `_data` folder can be used for menus, social plugins, and other "data" elements.
+-   To customize the style, look in `assets`.  `style.scss` has info about how Jekyll uses sass.  Changes should be done in `assets/_sass/theme.scss` or `theme/_custom.scss` and `theme/_theme_variables.scss`
+-   Jekyll is made up of two defaults content types.  `pages` are for static content. `posts` are for periodic content, like a blog.  `collections` can be defined to add new content types, and can make use of `_data`.  All can take advantage of `tags` & `categories`.
+-   Customize static pages such as `index.md`, `about.md` then add/delete files in `_posts`
+
+## Bugs and Issues
+
+Find a bug or have a suggestion? [Open a new issue]({{ site.github.issues_url }}) on GitHub.
