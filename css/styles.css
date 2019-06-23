@@ -114,10 +114,10 @@
                font-weight: 500;
            }
            
-           header h4 {
-               color: yellowgreen;
-               font-size: 35px;
-               font-weight: 500;
+           h3.discount {
+              color: #fe0909;
+              font-size: 40px;
+              font-style: italic;
            }
            
            header ul li {
