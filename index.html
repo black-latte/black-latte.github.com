@@ -18,8 +18,39 @@
 
 <link rel="icon" href="img/prod.png" type="image/png">
 
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+   fbq('init', '470881203481289'); 
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" 
+  src="https://www.facebook.com/tr?id=470881203481289&ev=PageView
+  &noscript=1"/>
+</noscript>
+  <!-- End Facebook Pixel Code -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143037502-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143037502-1');
+</script>
+<!-- End Google Analytics -->
 </head>
 <body>
+<script>fbq('track', 'Lead');</script>  
 <nav class="navbar navbar-default navbar-fixed-top">
 
 <div id="topbar">
@@ -181,7 +212,7 @@
 <p style="color: #000; font-size: 11px; text-align:center;">*Prosimy zwrócić uwagę na fakt, że stawki VAT mogą różnić się w zależności od przepisów jakie obowiązują w kraju w ktróym było składane zamówienie. Pracownicy naszego działu sprzedaży/ obłusgi klientów z radością wam wyjaśnią<p>
 <script type="text/javascript">var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-  onload="if(submitted == true){ document.getElementById('thanks').style.display = 'block';}"></iframe>
+  onload="if(submitted == true){ document.getElementById('thanks').style.display = 'block'; fbq('track', 'Purchase'); }"></iframe>
   <form action="https://docs.google.com/forms/d/e/1FAIpQLScqDdFiJGsm7inDj1ZfcMqtvwzvSfElIyvrgMKwvcqjfxYoKw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" id="cf">
   <div class="form-group">
     <input type="text" class="form-control" id="nane" placeholder="Twoje imię" name="entry.2005620554" required>
@@ -273,6 +304,10 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+document.getElementById('buynow').addEventListener('click', function() {
+  fbq('track', 'AddToCart');
+}, false);
 
 </script>
 
