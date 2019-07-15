@@ -1,315 +1,579 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Black Latte</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Black Latte</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="build/mediaelement-and-player.min.js"></script>
-<link rel="stylesheet" href="build/mediaelementplayer.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="build/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="build/mediaelementplayer.css">
 
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	 <link rel="stylesheet" href="css/main.css">
+	 <link rel="stylesheet" href="css/styles.css">
+	 <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <script src="js/slick.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="icon" href="img/prod.png" type="image/png">
 
-<link rel="stylesheet" href="css/styles.css">
-
-<link rel="icon" href="img/prod.png" type="image/png">
-
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window,document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-   fbq('init', '470881203481289'); 
-  fbq('track', 'PageView');
-</script>
-<noscript>
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '470881203481289');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
   <img height="1" width="1" 
   src="https://www.facebook.com/tr?id=470881203481289&ev=PageView
   &noscript=1"/>
 </noscript>
-  <!-- End Facebook Pixel Code -->
+    <!-- End Facebook Pixel Code -->
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143037502-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143037502-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-143037502-1');
-</script>
-<!-- End Google Analytics -->
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-143037502-1');
+    </script>
+    <!-- End Google Analytics -->
 </head>
-<body>
-<script>fbq('track', 'Lead');</script>  
-<nav class="navbar navbar-default navbar-fixed-top">
 
-<div id="topbar">
-<div class="container">
-<div class="contact-info float-left">
-<i class="fa fa-leaf"></i><span>Naturalny skład</span>&nbsp&nbsp
-<i class="fa fa-check-circle"></i><span>Gwarancja rezultatu</span>
-</div>
-</div>
-</div>
-<div class="container">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<body>
+    <script>
+        fbq('track', 'Lead');
+    </script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+        <div id="topbar">
+            <div class="container">
+                <div class="contact-info float-left">
+                    <i class="fa fa-leaf"></i><span>Naturalny skład</span>&nbsp&nbsp
+                    <i class="fa fa-check-circle"></i><span>Gwarancja rezultatu</span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 <span class="sr-only">Toggle navigation</span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<a class="navbar-brand" href="index.html#">Black Latte</a>
-</div>
-<div id="navbar" class="navbar-collapse collapse">
-<ul class="nav navbar-nav navbar-right">
-<li><a href="index.html#about">Black Latte</a></li>
-<li><a href="index.html#results">Rezultat</a></li>
-<li><a href="index.html#ingredients">Składniki</a></li>
-<li><a href="index.html#steps">Jak tego użyć!</a></li>
-<li><a href="index.html#contactform" id="buynow">Kup teraz</a></li>
-</ul>
-</div>
-</div>
-</nav>
+                <a class="navbar-brand" href="index.html#">Black Latte</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html#about">Black Latte</a></li>
+                    <li><a href="index.html#results">Rezultat</a></li>
+                    <li><a href="index.html#ingredients">Składniki</a></li>
+                    <li><a href="index.html#steps">Jak tego użyć!</a></li>
+                    <li><a href="index.html#contactform" id="buynow">Kup teraz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<header>
-<div class="container">
-<div class="row" style="padding-top:50px;">
-<div class="col-md-1"></div>
-<div class="col-md-6">
-<h1>Black Latte</h1>
-<h3>Produkt naturalny i organiczny</h3>
-<ul>
-<li>Absorbuje tłuszcz, przekształcając go w energię</li>
-<li>Usuwa toksyny i szkodliwe związki z organizmu</li>
-<li>Hamuje apetyt i zapewnia wigor</li>
-<li>Usuwa nadmiar płynów z organizmu</li>
-</ul>
-<h3 class="discount">Rabat do 50%</h3>
-<p class="old_price"> <del> 318 zł</del><span class="new_price"> 159 zł* </span></p>
-<p style="color: #fff; font-size: 12px;">*Prosimy zwrócić uwagę na fakt, że stawki VAT mogą różnić się w zależności od przepisów jakie obowiązują w kraju w ktróym było składane zamówienie. Pracownicy naszego działu sprzedaży/ obłusgi klientów z radością wam wyjaśnią<p>
-<a href="index.html#contactform" id="buynow">Zamów</a>
-</div>
-<div class="col-md-5">
-<img src="img/blacklatte.png" alt="" class="responsive">
-</div>
-</div>
-</div>
-</header>
+    <header>
+        <div class="container">
+            <div class="row" style="padding-top:50px;">
+                <div class="col-md-1"></div>
+                <div class="col-md-6">
+                    <h1>Black Latte</h1>
+                    <h3>Kawa odchudzająca</h3>
+                    <ul>
+                        <li>Absorbuje tłuszcz, przekształcając go w energię</li>
+                        <li>Usuwa toksyny i szkodliwe związki z organizmu</li>
+                        <li>Hamuje apetyt i zapewnia wigor</li>
+                        <li>Usuwa nadmiar płynów z organizmu</li>
+                    </ul>
+                    <h3 class="discount">Rabat do 50%</h3>
+                    <p class="old_price"> <del> 318 zł</del><span class="new_price"> 159 zł* </span></p>
+                    <p style="color: #fff; font-size: 12px;">*Prosimy zwrócić uwagę na fakt, że stawki VAT mogą różnić się w zależności od przepisów jakie obowiązują w kraju w ktróym było składane zamówienie. Pracownicy naszego działu sprzedaży/ obłusgi klientów z radością wam wyjaśnią
+                        <p>
+                            <a href="index.html#contactform" id="buynow">Zamów</a>
+                </div>
+                <div class="col-md-5">
+                    <img src="img/blacklatte.png" alt="" class="responsive">
+                </div>
+            </div>
+        </div>
+    </header>
 
-<section id="about">
-<div class="container">
-<h1 style="text-align:center;">BLACK LATTE</h1><hr><br>
-<div class="row">
-<div class="col-md-5">
-<img src="img/prod.png" alt="" class="responsive">
-</div>
-<div class="col-md-6">
-<p>Tak powstała formuła napoju Black Latte, który w smaku niczym nie różni się od zwykłego, lubianego przez wszystkich latte, ale zawierają aktywowany węgiel, który aktywnie absorbuje tłuszcz i rozkłada go, usuwając z organizmu wszelkie toksyny i szkodliwe cząsteczki.Nadwaga znika, ale biust nie ulega zmniejszeniu. Black Latte przyspiesza przemianę materii i tłumi apetyt, co pozwala stabilnie chudnąć o bez dodatkowych obciążeń fizycznych i ograniczania się w jedzeniu.</p>
-<p>Stymuluje ono przemianę materii, dodaje sił i energii do życia z korzyścią dla figury.Należy go stosować zamiast posiłku nie dłużej, niż miesiąc.W tym czasie można osiągnąć imponujące wyniki.</p>
-<a href="index.html#contactform" id="buynow">Zamów</a>
-</div>
-</div>
-</div>
-</section>
+    <section id="about">
+        <div class="container">
+            <h1 style="text-align:center;">BLACK LATTE</h1>
+            <hr><br>
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="img/prod.png" alt="" class="responsive">
+                </div>
+                <div class="col-md-6">
+                    <p>Eksperci ds. Zdrowia kobiet twierdzą, że ważne jest nie tylko pozbycie się zbędnych kilogramów, ale także utrzymanie wagi w przyszłości.To zadanie, które wykonuje Black Latte, nie szkodzi zdrowiu, zalecane przez wielu ekspertów, pozwala
+                        na utrzymanie prawidłowej wagi przez długi czas.</p>
+                    <p>Nie trzeba trzymać się w ścisłych granicach, rezygnować z wielu udogodnień w życiu, a przy kawie węglowej bardzo łatwo jest schudnąć, zwłaszcza w przypadku słodkich zębów.</p>
+                    <a href="index.html#contactform" id="buynow">Zamów</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="results">
-<div class="container">
-<div class="row">
-<div class="col-md-6">
-<img src="img/blacklatte.png" alt="" class="responsive">
-</div>
-<div class="col-md-6">
-<h3>Rezultat Black Latte</h3>
-<ul>
-<li>Przekształca tłuszcz w energię, dodaje energii</li>
-<li>Zmniejsza apetyt i zaspokaja głód</li>
-<li>Przyspiesza metabolizm</li>
-<li>Oczyszcza organizm z toksyn i nadmiaru płynów</li>
-</ul>
-<a href="index.html#contactform" id="buynow">Zamów</a>
-</div>
-</div>
-</div>
-</section>
+    <section id="results">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- <img src="img/blacklatte.png" alt="" class="responsive"> -->
+                </div>
+                <div class="col-md-6">
+                    <h3>Rezultat Black Latte</h3>
+                    <ul>
+                        <li>Przekształca tłuszcz w energię, dodaje energii</li>
+                        <li>Zmniejsza apetyt i zaspokaja głód</li>
+                        <li>Przyspiesza metabolizm</li>
+                        <li>Oczyszcza organizm z toksyn i nadmiaru płynów</li>
+                    </ul>
+                    <a href="index.html#contactform" id="buynow">Zamów</a>
+                </div>
+				</div>
+				<div class="row">
+					<div class="col-md-8" id="contr_fluid2">
+						<h2 class="h1_con">Najpopularniejszym powodem jest środek świata!</h2>
+						<p id="typ_color">Dietetyk Cynthia Pascal, konsultant ds. Żywienia Charlize Theron i Sandra Bullock zalecają spożywanie latte z węgla zamiast przekąsek i / lub jednego z posiłków w celu szybkiej utraty wagi. Stymuluje przemianę materii, dostarcza siły i energii dla zdrowego życia na rzecz figury. W ciągu miesiąca możesz osiągnąć imponujące wyniki. Wyobraź sobie, że pijesz węgiel rano zamiast kawy latte i ładunek żywości przez cały dzień masz gwarancję! Możesz zastąpić każdą „herbatę” smaczną BlackLatte. Smaczne, użyteczne, a co najważniejsze - wynik na skalach naprawdę ci się spodoba!</p>
+					</div>
+				</div>
+        </div>
+    </section>
 
-<section id="ingredients">
-<div class="container">
-<div class="row">
-<div class="col-md-2"></div>
-<div class="col-md-4">
-<img src="img/block3_item.jpg" alt="">
-<h3>AKTYWOWANY WĘGIEL</h3>
-<p>Hamuje wchłanianie do 80% tłuszczu z pożywienia i gromadzenie się go w organizmie; zapewnia bezpieczny podział, przetwarzanie i wydalanie starych zapasów tłuszczu i substancji toksycznych.</p>
-</div>
-<div class="col-md-4">
-<img src="img/block3_item2.jpg" alt="">
-<h3>MLEKO KOKOSOWE</h3>
-<p>Bezpośrednio wpływa na przyspieszenie metabolizmu 3-4 razy.Uruchamia w organizmie proces "samooczyszczania" — aktywnego przetwarzania złogów wewnętrznego tłuszczu, zgromadzonego w "boczkach", brzuchu i na udach.</p>
-</div>
-</div>
-<div class="row">
-<div class="col-md-2"></div>
-<div class="col-md-4">
-<img src="img/block3_item3.jpg" alt="">
-<h3>L-CARNITIN</h3>
-<p>Rozkłada i usuwa nadmiar tkanki tłuszczowej, a wraz z nim przejawy nawet bardzo widocznego cellulitu; walczy ze zwisającą skórą i pomaga uzyskać jędrne ciało po silnym odchudzaniu.</p>
-</div>
-<div class="col-md-4">
-<img src="img/block3_item4.jpg" alt="">
-<h3>OMEGA-3</h3>
-<p>Zwiększa poziom leptyny, hormonu odpowiedzialnego za szybkość rozkładu tłuszczów w organizmie.Co ważne, nasz organizm nie jest w stanie produkować Omega-3, a dostaje je tylko z zewnątrz.</p>
-</div>
-</div>
-</div>
-</section>
+    <section id="ingredients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <img src="img/block3_item.jpg" alt="">
+                    <h3>AKTYWOWANY WĘGIEL</h3>
+                    <p>Hamuje wchłanianie do 80% tłuszczu z pożywienia i gromadzenie się go w organizmie; zapewnia bezpieczny podział, przetwarzanie i wydalanie starych zapasów tłuszczu i substancji toksycznych.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/block3_item2.jpg" alt="">
+                    <h3>MLEKO KOKOSOWE</h3>
+                    <p>Bezpośrednio wpływa na przyspieszenie metabolizmu 3-4 razy.Uruchamia w organizmie proces "samooczyszczania" — aktywnego przetwarzania złogów wewnętrznego tłuszczu, zgromadzonego w "boczkach", brzuchu i na udach.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <img src="img/block3_item3.jpg" alt="">
+                    <h3>L-CARNITIN</h3>
+                    <p>Rozkłada i usuwa nadmiar tkanki tłuszczowej, a wraz z nim przejawy nawet bardzo widocznego cellulitu; walczy ze zwisającą skórą i pomaga uzyskać jędrne ciało po silnym odchudzaniu.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/block3_item4.jpg" alt="">
+                    <h3>OMEGA-3</h3>
+                    <p>Zwiększa poziom leptyny, hormonu odpowiedzialnego za szybkość rozkładu tłuszczów w organizmie.Co ważne, nasz organizm nie jest w stanie produkować Omega-3, a dostaje je tylko z zewnątrz.</p>
+                </div>
+            </div>
+        </div>
+	 </section>
+    <section id="steps">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4" id="monohrom">
+                    <img src="img/block4_item1.png" alt="">
+                    <p>Wymieszaj 2 łyżeczki Black Latte w szklance lub filiżance z gorącą wodą.</p>
+                </div>
+                <div class="col-md-4 col-sm-4" id="monohrom">
+                    <img src="img/block4_item2.png" alt="">
+                    <p> Spożywaj 1 porcję dziennie.Dla maksymalnego wchłaniania, zalecamy spożywanie napoju w czasie śniadania.</p>
+                </div>
+                <div class="col-md-4 col-sm-4" id="monohrom">
+                    <img src="img/block4_item3.png" alt="">
+                    <p> Zalecany czas kuracji - 1 miesiąc</p>
+                </div>
+            </div>
+        </div>
+	 </section>
+		<div class="container-fluid" id="bg_n">
+		  <div class="row">
+			<div class="col-md-6" id="contr_fluid">
+				<h1 class="h1_con">WIDOCZNY WYNIK PIERWSZE DNI!</h1>
+				<p id="typ_color">Amerykańscy studenci, ludzie, znali przebaczenie i najlepszy sposób, aby zejść z drogi, a nie wiele sposobów życia. Formuła razrobili na smaki, które napiję się Black Latte, za to, że nic nie smakuje z najbardziej popularnej latte, ale v activei vugilly, yaky aktywnie wchłaniany tłuszcz ros roscheplyuyogo, vivod ze wszystkimi żużlami i toksynami. Zayva vaga yde, proteina nie zmienia się w rozmіrі. Czarny Latte ubolewa nad mową i otępieniem apetytu, i pozwala na stabilne używanie 3-4 kilogramów tygodniowo bez fizichnyh navantazhen lub obmenzhen w kharchuvannі. Viber_t dla siebie komfort to skudnennya - Wypij BlackLatte zamień jeden priyomu їжі lub po prostu kilka wczesnych kawi.</p>
+			</div>
+		  </div>
+		</div>
+    <section>
+        <div class="block7 block">
+            <div class="limit">
+                <h1><span>W JAKI SPOSÓB</span>TWÓJ CIAŁO ZMIENI SIĘ, GDY ZACZYNA SIĘ AKCEPTACJA</h1>
+                <ul class="list">
+                    <li>
+                        <div class="days">
+                            1 dzień
+                        </div>
+                        <p>Zauważysz, jak rano budzisz się energicznie i wypoczęty.
+                        </p>
+                    </li>
+                    <li>
+                        <div class="days">
+                            5 dzień
+                        </div>
+                        <p>Ciało już pracuje w trybie odchudzania, straciłeś 2-3 kg
+                        </p>
+                    </li>
+                    <li>
+                        <div class="days">
+                            10 dzień
+                        </div>
+                        <p>Jesteś energiczny, straciłeś 5-6 kg i nosisz ubrania mniejsze
+                        </p>
+                    </li>
+                    <li>
+                        <div class="days">
+                            21 dzień
+                        </div>
+                        <p>Twoje ciało odmłodzone, objętość zmniejszyła się o 6-7 cm i wzrosła do 10 kg wagi
+                        </p>
+                    </li>
+                    <li>
+                        <div class="days">
+                            28 dzień
+                        </div>
+                        <p>Straciłeś 15–20 kg wagi i nosisz seksowne ubrania o 3 rozmiary mniejsze, wszyscy za tobą szaleją!
+                        </p>
+                    </li>
+                    <img src="img/arrow.png" alt="" class="arrow">
+                    <img src="img/weight.png" alt="" class="weight">
+                </ul>
+            </div>
+        </div>
+        <div class="block8 block">
+            <div class="limit">
+                <h1>WYDAJNOŚĆ Black Latte POTWIERDZONA PRZEZ WYNIKI BADAŃ KLINICZNYCH PROWADZONYCH W KLINIKACH USA, UKRAINIE I IZRAELU</h1>
+                <ul class="list">
+                    <li><img src="img/block8_item1.jpg" alt="">
+                        <p>USA</p>
+                    </li>
+                    <li><img src="img/block8_item2.jpg" alt="">
+                        <p>Izrael</p>
+                    </li>
+                    <li><img src="img/block8_item3.jpg" alt="">
+                        <p>Ukraina</p>
+                    </li>
+                    <li><img src="img/block8_item4.jpg" alt="">
+                        <p>Międzyresortowa Rada Koordynacyjna ds. Żywienia w Narodowej Akademii Nauk Białorusi</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="block9 block">
+            <div class="limit">
+                <h1>W badaniu wzięło udział 900 osób, które miały od 10 do 40 kg nadwagi.</h1>
+                <ul class="list">
+                    <li>
+                        <p>Zmniejszyć objętość o 11-16 cm</p><span>91%</span></li>
+                    <li>
+                        <p>Utrata wagi 8-16 kg</p><span>99%</span></li>
+                    <li>
+                        <p>Zanik zgagi i ciężkości w żołądku</p><span>100%</span></li>
+                    <li>
+                        <p>Normalizacja snu i zwiększenie wydajności</p><span>97%</span></li>
+                    <li>
+                        <p>Zmniejszenie obrzęku i objawów cellulitu</p><span>94%</span></li>
+                </ul>
+            </div>
+            <img src="img/block9_item1.png" alt="" class="meter">
+        </div>
+        <div class="block10 block">
+            <div class="limit">
+                <div class="mark">
+                    <div class="left">
+                        <p>World Health Organization</p>
+                        <div class="img_cont">
+                            <img src="img/mark.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p>Wszystkie etapy testów potwierdzają eksperci</p>
+                        <p class="color">Światowa Organizacja Zdrowia</p>
+                    </div>
+                </div>
+                <h1>
+                    Od Black Latte Latte OD Snu DO WYNIKU - TYLKO JEDEN KROK! Niektóre z 2350 historii naszych klientów.
+                </h1>
+                <ul class="slider" id="slider2">
+                    <li class="item">
+                        <div class="top">
+                            <div class="left">
+                                <img src="img/block10_slide1.1.jpg" alt="">
+                            </div>
+                            <div class="right">
+                                <p class="label">«Całkowicie zaktualizowałem swoją szafę, ale najważniejsze jest to, że mam chłopaka !!»</p>
+                                <p class="name"><span>Natalya Vetokhina</span>, 30 lat, Dnipro</p>
+                                <p class="line">
+                                </p>
+                                <p class="text">
+                                    Mam tylko 30 lat, ale ostatnio ważyłem ponad 80 kg. Jednocześnie mam wiele problemów z żołądkiem, więc dieta nie jest dla mnie odpowiednia. I spróbuj znaleźć produkty zdrowej diety w naszym małym miasteczku. Nigdy nie przyjaźniłem się ze sportem od dzieciństwa.
+                                    Jakoś nie mieliśmy związku. Ale to wszystko zmieniło się, gdy dowiedziałem się o Black Latte. Jest to napój instant o smaku mojej ukochanej latte, który musisz pić raz dziennie. Producent zaleca picie 1,5
+                                    litr wody dziennie. W ciągu miesiąca zrobiłem wszystko zgodnie z instrukcjami i moje nadzieje nie zawiodły się! Straciłem 16 kg w zaledwie 4 tygodnie! To jest po prostu niesamowite. W tym czasie całkowicie zaktualizowałem swoją garderobę, ale najważniejsze
+                                    Mam chłopaka! Kwiaty, daty, spacery pod księżycem! Myślałem, że to się nigdy nie wydarzy w moim życiu! Pah-pah-pah! Tutaj myślę, aby zamówić inny kurs. I powtórz po pewnym czasie, aby skonsolidować lub poprawić
+                                    wynik.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <ul class="list">
+                                <li><img src="img/block10_slide1.2.jpg" alt=""></li>
+                                <li><img src="img/block10_slide1.3.jpg" alt=""></li>
+                                <li><img src="img/block10_slide1.4.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="top">
+                            <div class="left">
+                                <img src="img/block10_slide2.4.jpg" alt="">
+                            </div>
+                            <div class="right">
+                                <p class="label">
+                                    “Wpadam w dżinsy, które nosiłam przed pierwszą ciążą!”
+                                </p>
+                                <p class="name"><span>Lily</span>, 30 lat, Połtawa</p>
+                                <p class="line">
+                                </p>
+                                <p class="text">
+                                    Po narodzinach mojego trzeciego dziecka nie mogłem wrócić do formy. Pozostaje podstępna strona, bryczesy jeździeckie, jak Chapaev i okropny brzuch. Byłem bardzo zdenerwowany tą sytuacją, ale nie miałem nic do roboty. Faktem jest, że w sporcie z dużymi rodzinami
+                                    Czas mamusi nie jest bardzo ... A z dietami zbyt kłopotliwy - jestem uczulony na prawie wszystko! A także okruchy na GW. Dlatego nie tak łatwo odebrać jedzenie. Sąsiadka powiedziała mi, że jej siostrzenica pomogła jej schudnąć po porodzie.
+                                    węgiel latte Czarny Latte. Podręcznik został napisany, że ten cudowny napój powinien pozbawić mnie tłuszczu w ciągu zaledwie jednego miesiąca. Przyznaję, nie wierzyłem. Jak to jest? Jedna filiżanka dziennie, bez wysiłku i minus 15 kg? Ale
+                                    Niemniej jednak studiowała kompozycję - wszystkie naturalne, czytaj recenzje. Uznałem, że nie będzie gorzej. Zaczęłam brać. Po tygodniu zacząłem odczuwać pierwsze zmiany. Zwiększona energia, lepszy sen. Chociaż oczywiście
+                                    może to tylko zbieg okoliczności - pogoda się poprawiła, młodsze dziecko przeniosło się do swojego pokoju. Po 2 tygodniach ważyłem i nie mogłem uwierzyć własnym oczom! Minus 7 kg !! I kolejny miesiąc nie minął, ale wpadam w dżinsy, które
+                                    nosił przed pierwszą ciążą! Mąż znów zaczął się męczyć, może wkrótce pójdziemy na czwarty. Teraz wiem, jak uzyskać kształt po porodzie. Nie możesz się bać.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <ul class="list">
+                                <li><img src="img/block10_slide2.2.jpg" alt=""></li>
+                                <li><img src="img/block10_slide2.3.jpg" alt=""></li>
+                                <li><img src="img/block10_slide2.1.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="top">
+                            <div class="left">
+                                <img src="img/block10_slide4.1.jpg" alt="">
+                            </div>
+                            <div class="right">
+                                <p class="label">
+                                    “Wagi nie da się oszukać: minus 18 kg!”
+                                </p>
+                                <p class="name"><span>Natalia</span>, 34 lata, Odessa</p>
+                                <p class="line">
+                                </p>
+                                <p class="text">
+                                    Do wieku 27 lat byłem aktywnie zaangażowany w kształtowanie, wyglądałem całkiem dobrze i pasowałem. Ale lata i zmiany hormonalne zajęły własne. Nie ma siły na sport, na diecie samokontroli. Musiałem zaktualizować szafę o jeden rozmiar większy. Potem kolejny
+                                    na jednym ... Wszystko poszło do następnego, kiedy przyjaciel przyniósł mi natychmiastowy napój Black Latte i kazał mi go pić raz dziennie. Zaleciła też picie większej ilości wody. Nie wierzyłem w rezultat. Więc co było moje
+                                    zdziwienie, gdy miesiąc później zacząłem wchodzić w moje stare rzeczy! Co więcej, czuję się energicznie, jestem pełen siły! Moja skóra wygląda znacznie młodziej. Nie wiem, czy to Czarny Latte, przekonanie o sobie czy tylko zbieg okoliczności,
+                                    ale nie można oszukać łusek: minus 18 kg! Plus, myślę, że byłem młodszy o 10 lat!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <ul class="list">
+                                <li><img src="img/block10_slide4.2.jpg" alt=""></li>
+                                <li><img src="img/block10_slide4.3.jpg" alt=""></li>
+                                <li><img src="img/block10_slide4.4.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="top">
+                            <div class="left">
+                                <img src="img/block10_slide5.1.jpg" alt="">
+                            </div>
+                            <div class="right">
+                                <p class="label">
+                                    “Przyszedłem do mojej „ciężarnej” formy za miesiąc”
+                                </p>
+                                <p class="name"><span>Natalia</span>, 26 lat, Kijów</p>
+                                <p class="line">
+                                </p>
+                                <p class="text">
+                                    Po urodzeniu dziecka dostałem nadwagi i grubych fałd. Ponadto, wraz ze szczęściem macierzyństwa, nabyłem również żylaki. Dlatego droga do siłowni była dla mnie zamknięta. A jak stracić za dużo, nie uprawiając sportu?
+                                    Jem dobrze, to nie pomaga. Prawie pogodziłem się z tym, jak wyglądam, ale słyszałem przypadkiem od mam na stronie o rozpuszczalnym napoju z węglem drzewnym o smaku Latte. To prawda, powiedzieli to raczej
+                                    po prostu kolejny rozwód - a kto wierzy, że jedna filiżanka latte dziennie i żaden wysiłek nie może pomóc pozbyć się wiszących stron. Ogólnie próbowałem przeciw wszystkim. Nie żałuję ani chwili! Przyszedłem do mojego
+                                    Formularz „przed ciążą” za miesiąc. A to jest minus 14 kg żywego tłuszczu! Teraz zamówiłem dla siebie kolejny kurs - poprawię wynik. A matki patrzą na mnie z niedowierzaniem, nie wierzą, że to Czarny Latte. Ale wydaje mi się
+                                    każdy zamówił już kurs.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <ul class="list">
+                                <li><img src="img/block10_slide5.2.jpg" alt=""></li>
+                                <li><img src="img/block10_slide5.3.jpg" alt=""></li>
+                                <li><img src="img/block10_slide5.4.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-<section id="steps">
-<div class="container">
-<div class="row">
-<div class="col-md-4 col-sm-4" id="monohrom">
-<img src="img/block4_item1.png" alt="">
-<p>Wymieszaj 2 łyżeczki Black Latte w szklance lub filiżance z gorącą wodą.</p>
-</div>
-<div class="col-md-4 col-sm-4" id="monohrom">
-<img src="img/block4_item2.png" alt="">
-<p> Spożywaj 1 porcję dziennie.Dla maksymalnego wchłaniania, zalecamy spożywanie napoju w czasie śniadania.</p>
-</div>
-<div class="col-md-4 col-sm-4" id="monohrom">
-<img src="img/block4_item3.png" alt="">
-<p> Zalecany czas kuracji - 1 miesiąc</p>
-</div>
-</div>
-</div>
-</section>
+    <section id="contactform">
+        <div class="container">
+            <div class="row" style="text-align:center;">
+                <h1>Zastanawiasz się, jak zdobyć <span style="font-weight:800;">Black Latte</span>?</h1>
+                <h2 style="font-size: 22px;">Wprowadź swoje dane, a nasz Menedżer Sprzedaży skontaktuje się z Tobą wkrótce,<br> aby potwierdzić Twoje zamówienie.</p>
+                    <h2 style="font-style:italic;">Pomóż swojemu organizmowi osiągnąć pożądany rezultat!</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <img src="img/blacklatte.png" alt="" class="responsive" style="padding-top:40px;">
+                </div>
+                <div class="col-md-5">
+                    <h3 style="text-align:center;">Rabat do 50%</h3>
+                    <p class="old_price"> <del>318 zł*</del><span class="new_price">159 zł*</span></p>
+                    <p style="color: #000; font-size: 11px; text-align:center;">*Prosimy zwrócić uwagę na fakt, że stawki VAT mogą różnić się w zależności od przepisów jakie obowiązują w kraju w ktróym było składane zamówienie. Pracownicy naszego działu sprzedaży/ obłusgi klientów z radością wam wyjaśnią
+                        <p>
+                            <script type="text/javascript">
+                                var submitted = false;
+                            </script>
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted == true){ document.getElementById('thanks').style.display = 'block'; fbq('track', 'Purchase'); }"></iframe>
+                            <form action="https://docs.google.com/forms/d/e/1FAIpQLScqDdFiJGsm7inDj1ZfcMqtvwzvSfElIyvrgMKwvcqjfxYoKw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" id="cf">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="nane" placeholder="Twoje imię" name="entry.2005620554" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="phone" placeholder="Telefon" name="entry.1166974658" required>
+                                </div>
+                                <input class="btn btn-success btn-lg text-uppercase" type="submit" value="Zamów" id="myBtn">
+                            </form>
+                </div>
+                <div id="thanks" class="modal-footer col-md-12" style="display:none;">
+                    <h1>Dziękujemy za złożenie zamówienia. Wkrótce skontaktuje się z Tobą pracownik oficjalnego call center! Prosimy upewnić się, że powyższe pola zostały wypełnione prawidłowo. Jeżeli nie, prosimy wypełnić formularz ponownie!</h1>
+                </div>
+    </section>
 
-<section id="contactform">
-<div class="container">
-<div class="row" style="text-align:center;">
-<h1>Zastanawiasz się, jak zdobyć <span style="font-weight:800;">Black Latte</span>?</h1>
-<h2 style="font-size: 22px;">Wprowadź swoje dane, a nasz Menedżer Sprzedaży skontaktuje się z Tobą wkrótce,<br> aby potwierdzić Twoje zamówienie.</p>
-<h2 style="font-style:italic;">Pomóż swojemu organizmowi osiągnąć pożądany rezultat!</h2>
-</div>
-<div class="row">
-<div class="col-md-2"></div>
-<div class="col-md-5">
-<img src="img/prod.png" alt="" class="responsive" style="padding-top:40px;">
-</div>
-<div class="col-md-5">
-<h3 style="text-align:center;">Rabat do 50%</h3>
-<p class="old_price"> <del>318 zł*</del><span class="new_price">159 zł*</span></p>
-<p style="color: #000; font-size: 11px; text-align:center;">*Prosimy zwrócić uwagę na fakt, że stawki VAT mogą różnić się w zależności od przepisów jakie obowiązują w kraju w ktróym było składane zamówienie. Pracownicy naszego działu sprzedaży/ obłusgi klientów z radością wam wyjaśnią<p>
-<script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-  onload="if(submitted == true){ document.getElementById('thanks').style.display = 'block'; fbq('track', 'Purchase'); }"></iframe>
-  <form action="https://docs.google.com/forms/d/e/1FAIpQLScqDdFiJGsm7inDj1ZfcMqtvwzvSfElIyvrgMKwvcqjfxYoKw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" id="cf">
-  <div class="form-group">
-    <input type="text" class="form-control" id="nane" placeholder="Twoje imię" name="entry.2005620554" required>
-  </div>
-  <div class="form-group">
-    <input type="text" class="form-control" id="phone" placeholder="Telefon" name="entry.1166974658" required>
-  </div>
-  <input class="btn btn-success btn-lg text-uppercase" type="submit" value="Zamów" id="myBtn">
-  </form>
-</div>
-<div id="thanks" class="modal-footer col-md-12" style="display:none;">
-  <h1>Dziękujemy za złożenie zamówienia. Wkrótce skontaktuje się z Tobą pracownik oficjalnego call center! Prosimy upewnić się, że powyższe pola zostały wypełnione prawidłowo. Jeżeli nie, prosimy wypełnić formularz ponownie!</h1>
-</div>
-</section>
+    <footer class="site-footer" style="background-color: #242424;">
+        <div class="footer-columns at-fixed-width">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-sm-7 col-md-7">
+                        <h4>Disclaimers:</h4>
+                        <hr>
+                        <p>Informacje zawarte na tej stronie mają wyłącznie charakter informacyjny i w żaden sposób nie zastępują opinii ekspertów. Efekt może być różny w zależności od specyfiki organizmu. Przed użyciem prosimy skonsultować się z ekspertem.
+                            Kliknięcie przycisku “ZAMÓW” potwierdza, że go przeczytałeś <a href="privacypolicy.html">Polityka Prywatności</a> i wyrażasz zgodę na przetwarzanie swoich danych osobowych. </p>
+                    </div>
+                    <div class="pt-3 col-xs-12 col-sm-12 col-md-2" id="vid">
+                        <video width="277" height="155" src="https://www.youtube.com/embed/mfubwwK-Xeo"></video>
+                    </div>
 
-<footer class="site-footer" style="background-color: #242424;">
-<div class="footer-columns at-fixed-width">
-<div class="container">
-<div class="row">
-<div class=" col-sm-7 col-md-7">
-<h4>Disclaimers:</h4><hr>
-<p>Informacje zawarte na tej stronie mają wyłącznie charakter informacyjny i w żaden sposób nie zastępują opinii ekspertów. Efekt może być różny w zależności od specyfiki organizmu. Przed użyciem prosimy skonsultować się z ekspertem. Kliknięcie przycisku “ZAMÓW” potwierdza, że go przeczytałeś <a href="privacypolicy.html">Polityka Prywatności</a> i wyrażasz zgodę na przetwarzanie swoich danych osobowych. </p>
-</div>
-<div class="pt-3 col-xs-12 col-sm-12 col-md-2" id="vid">
-  <video width="277" height="155" src="https://www.youtube.com/embed/mfubwwK-Xeo"></video>
-</div>
+                    <div class="col-md-1"></div>
+                    <div class="col-xs-12 col-sm-2 col-md-2" id="quicklinks">
+                        <h4>Quick Links</h4>
+                        <hr>
+                        <p><i class="fa fa-arrow-circle-right"></i>&nbsp <a href="index.html#results">Rezultat</a></p>
+                        <p><i class="fa fa-arrow-circle-right"></i>&nbsp <a href="index.html#ingredients">Składniki</a></p>
+                        <p><i class="fa fa-arrow-circle-right"></i>&nbsp <a href="index.html#steps">Jak tego użyć!</a></p>
+                        <p><i class="fa fa-arrow-circle-right"></i>&nbsp <a href="index.html#contactform">Kup online</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="copy-right">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="footer-copyright text-left">
+                            <p class="at-display-inline-block">Copyright© 2019 Black Latte | All rights reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="at-first-level-nav text-right">
+                            <ul id="menu-footer-menu" class="menu">
+                                <li><a href="privacypolicy.html">Privacy Policy</a> |</li>
+                                <li><a href="terms.html">Terms & Conditions</a> |</li>
+                                <li><a href="aboutus.html">About</a> |</li>
+                                <li><a href="contactus.html">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="index.html#about" id="btn_top" class="btn_top"><i class="fa fa-angle-up sm-up"></i></a>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $('video, audio').mediaelementplayer();
+        });
 
-<div class="col-md-1"></div>
-<div class="col-xs-12 col-sm-2 col-md-2" id="quicklinks">
-<h4>Quick Links</h4><hr>
-<p><i class="fa fa-arrow-circle-right"></i>&nbsp <a href="index.html#results">Rezultat</a></p>
-<p><i class="fa fa-arrow-circle-right"></i>&nbsp <a href="index.html#ingredients">Składniki</a></p>
-<p><i class="fa fa-arrow-circle-right"></i>&nbsp <a href="index.html#steps">Jak tego użyć!</a></p>
-<p><i class="fa fa-arrow-circle-right"></i>&nbsp <a href="index.html#contactform">Kup online</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="clearfix"></div>
-<div class="copy-right">
-<div class="container">
-<div class="row">
-<div class="col-sm-6 col-md-6">
-<div class="footer-copyright text-left">
-<p class="at-display-inline-block">Copyright© 2019 Black Latte | All rights reserved</p>
-</div>
-</div>
-<div class="col-sm-6 col-md-6">
-<div class="at-first-level-nav text-right">
-<ul id="menu-footer-menu" class="menu">
-<li><a href="privacypolicy.html">Privacy Policy</a> |</li>
-<li><a href="terms.html">Terms & Conditions</a> |</li>
-<li><a href="aboutus.html">About</a> |</li>
-<li><a href="contactus.html">Contact us</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<a href="index.html#about" id="btn_top" class="btn_top"><i class="fa fa-angle-up sm-up"></i></a>
-</div>
-</footer>
-<script>
+        window.onscroll = function() {
+            myFunction()
+        };
 
-$(document).ready(function(){$('video, audio').mediaelementplayer();});
-
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  if (document.body.scrollTop > 50|| document.documentElement.scrollTop > 50) {
-    document.getElementById("btn_top").className = "btn_top";
-  } else {
-    document.getElementById("btn_top").className = "btn_top_first";
-  }
-}
+        function myFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("btn_top").className = "btn_top";
+            } else {
+                document.getElementById("btn_top").className = "btn_top_first";
+            }
+        }
 
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
 
-document.getElementById('buynow').addEventListener('click', function() {
-  fbq('track', 'AddToCart');
-}, false);
-
-</script>
+        document.getElementById('buynow').addEventListener('click', function() {
+            fbq('track', 'AddToCart');
+        }, false);
+    </script>
+    <script src="js/slider.js"></script>
 
 </body>
+
 </html>
