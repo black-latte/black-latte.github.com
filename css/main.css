@@ -2261,6 +2261,15 @@ select {
         line-height: normal;
         font-size: 18px;
         font-weight: 600;
+        padding: 10px;
+        background: rgba(223, 223, 223, 0.5);
+    }
+    #typ_color2{
+        line-height: normal;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 10px;
+        background: rgba(223, 223, 223, 0.6);
     }
     #results h3 {
         text-align: left;
