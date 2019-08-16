@@ -85,9 +85,9 @@
 </head>
 
 <body>
-    <script>
+    <!-- <script>
         fbq('track', 'Lead');
-    </script>
+    </script> -->
     <nav class="navbar navbar-default navbar-fixed-top">
 
         <div id="topbar">
@@ -525,7 +525,7 @@
                             <script type="text/javascript">
                                 var submitted = false;
                             </script>
-                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted == true){ document.getElementById('thanks').style.display = 'block'; fbq('track', 'Purchase'); }"></iframe>
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted == true){ document.getElementById('thanks').style.display = 'block'; fbq('track', 'Lead'); }"></iframe>
                             <form action="https://docs.google.com/forms/d/e/1FAIpQLScqDdFiJGsm7inDj1ZfcMqtvwzvSfElIyvrgMKwvcqjfxYoKw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" id="cf">
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="nane" placeholder="Twoje imię" name="entry.2005620554" required>
