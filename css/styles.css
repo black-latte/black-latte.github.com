@@ -400,4 +400,36 @@
             padding-top: 30px;
             padding-left: 40px;
           }
-          
+          .black-friday{
+            margin: 0 0 30px;
+            overflow: hidden;
+          }
+          .black-friday-img{
+            margin: 10px 20px 10px 0;
+            max-width: 175px;
+            float: left;
+          }
+          .black-friday-img img{
+            max-width: 100%;
+          }
+          .black-friday-box{
+            overflow: hidden;
+          }
+          .black-friday h1{
+              color: #f00;
+              background: none;
+              -webkit-background-clip: none;
+             -webkit-text-fill-color: currentColor;
+             font-size: 50px;
+          }
+          @media screen and (max-width:600px){
+            .black-friday-img{
+                margin: 0 0 20px;
+                max-width: 100%;
+                float: none;
+                text-align: center;
+            }
+            .black-friday-img img{
+                max-width: 175px;
+            }
+          }
